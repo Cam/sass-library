@@ -11,7 +11,7 @@
  *   - $transitions: {String} List of transition properties to set
  *
  * Usage:
- *   @import 'sass-library/mixins/transition-properties.scss';
+ *   @import 'sass-library/mixins/transitions.scss';
  *
  *   .selector {
  *     @include transition(width, height 0.5s ease-in);
