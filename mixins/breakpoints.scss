@@ -1,0 +1,36 @@
+/**
+ * Sets a media query for the specified breakpoint
+ *
+ * Author: Thomas Kelly (Shopify)
+ * Source: https://github.com/Shopify/starter-theme
+ * License: Copyright © 2018 Shopify. The MIT License (MIT)
+ *
+ * Arguments:
+ *   - $media-query: {String} Breakpoint variable (list found in variables.scss)
+ *
+ * Usage:
+ *   @import 'sass-library/mixins/breakpoints.scss';
+ *
+ *   .selector {
+ *     @include media-query($medium-up) {
+ *       color: red;
+ *     }
+ *   }
+ */
+
+@mixin media-query($media-query) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
+
+      @media only screen and #{$declaration} {
+        @content;
+      }
+    }
+  }
+}

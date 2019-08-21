@@ -1,0 +1,28 @@
+/**
+ * Outputs list of transition properties
+ *
+ * Author: Thomas Kelly (Shopify)
+ * Source: https://github.com/Shopify/starter-theme
+ * License: Copyright © 2018 Shopify. The MIT License (MIT)
+ *
+ * Dependencies: ./functions/get-transition-properties.scss
+ *
+ * Arguments:
+ *   - $transitions: {String} List of transition properties to set
+ *
+ * Usage:
+ *   @import 'sass-library/mixins/transition-properties.scss';
+ *
+ *   .selector {
+ *     @include transition(width, height 0.5s ease-in);
+ *   }
+ */
+
+@mixin transition($transitions...) {
+  $output: ();
+
+  @each $transition in $transitions {
+    $output: append($output, get-transition-properties($transition), comma);
+  }
+  transition: $output;
+}

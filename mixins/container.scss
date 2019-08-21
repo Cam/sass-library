@@ -1,0 +1,25 @@
+/**
+ * Layout container generator
+ *
+ * Author: Cam Gould
+ * Source: https://github.com/cam/sass-library
+ * License: Copyright © 2018 Cam Gould. The MIT License (MIT)
+ *
+ * Arguments:
+ *   - $max-width: {String} Grid width variable (list found in variables.scss)
+ *   - $gutter: {String} rem, px, or other unit value/s
+ *
+ * Usage:
+ *   @import 'sass-library/mixins/container.scss';
+ *
+ *   .selector {
+ *     @include container($grid-large);
+ *   }
+ */
+
+ @mixin container($max-width: 100%, $gutter: 0 2rem) {
+   margin: 0 auto;
+   padding: $gutter;
+   width: 100%;
+   max-width: $max-width;
+ }

@@ -1,0 +1,40 @@
+/**
+ * Returns the transition properties in the correct format
+ *
+ * Author: Thomas Kelly (Shopify)
+ * Source: https://github.com/Shopify/starter-theme
+ * License: Copyright © 2018 Shopify. The MIT License (MIT)
+ *
+ * Usage:
+ *   @import 'sass-library/functions/get-transition-properties.scss';
+ */
+
+@function get-transition-properties($transition) {
+  $property: all;
+  $duration: $transition-duration;
+  $easing: $transition-timing;
+  $delay: null;
+
+  $defaultProperties: (
+    $property,
+    $duration,
+    $easing,
+    $delay
+  );
+
+  $properties: ();
+
+  @for $i from 1 through length($defaultProperties) {
+    $p: null;
+
+    @if $i <= length($transition) {
+      $p: nth($transition, $i);
+    } @else {
+      $p: nth($defaultProperties, $i);
+    }
+
+    $properties: append($properties, $p);
+  }
+
+  @return $properties;
+}

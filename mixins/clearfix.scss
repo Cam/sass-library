@@ -1,0 +1,25 @@
+/**
+ * Forces an element to self-clear its children
+ *
+ * Author: Thomas Kelly (Shopify)
+ * Source: https://github.com/Shopify/starter-theme
+ * License: Copyright © 2018 Shopify. The MIT License (MIT)
+ *
+ * Usage:
+ *   @import 'sass-library/mixins/clearfix.scss';
+ *
+ *   .selector {
+ *     @include clearfix;
+ *   }
+ */
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  // stylelint-disable-next-line
+  *zoom: 1;
+}
