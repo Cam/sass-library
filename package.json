@@ -1,0 +1,23 @@
+{
+  "name": "sass-library",
+  "version": "0.1.0",
+  "description": "Lean Sass toolkit",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cam/sass-library.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "mixins"
+  ],
+  "author": "Cam Gould <npm@camgould.com> (https://camgould.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cam/sass-library/issues"
+  },
+  "homepage": "https://github.com/Cam/sass-library#readme"
+}
