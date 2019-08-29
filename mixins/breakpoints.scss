@@ -9,7 +9,7 @@
  *   - $media-query: {String} Breakpoint variable (list found in variables.scss)
  *
  * Usage:
- *   @import 'sass-library/mixins/breakpoints.scss';
+ *   @import '~sass-library/mixins/breakpoints.scss';
  *
  *   .selector {
  *     @include media-query($medium-up) {

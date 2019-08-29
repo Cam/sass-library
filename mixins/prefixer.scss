@@ -13,7 +13,7 @@
  *   - $prefixes {list} Vendor prefixes to output
  *
  * Usage:
- *   @import 'sass-library/mixins/prefixer.scss';
+ *   @import '~sass-library/mixins/prefixer.scss';
  *
  *   .element {
  *      @include prefixer(appearance, none, ("webkit", "moz"));

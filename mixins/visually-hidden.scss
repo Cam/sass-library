@@ -6,7 +6,7 @@
  * License: Copyright © 2018 Shopify. The MIT License (MIT)
  *
  * Usage:
- *   @import 'sass-library/mixins/visually-hidden.scss';
+ *   @import '~sass-library/mixins/visually-hidden.scss';
  *
  *   .selector {
  *     @include visually-hidden;
@@ -36,7 +36,7 @@
  *   - $position: {String} Positioning method for element
  *
  * Usage:
- *   @import 'sass-library/mixins/visually-hidden.scss';
+ *   @import '~sass-library/mixins/visually-hidden.scss';
  *
  *   .selector {
  *     @include visually-shown(relative);
