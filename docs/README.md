@@ -7,6 +7,6 @@ Sass library is a toolkit of mixins and resources designed to make styling with 
 ## Resources
 
 {% hint style="info" %}
-You may also like to review the [Github project](https://github.com/Cam/sass-library) or [NPM package](https://www.npmjs.com/package/sass-library).
+You may also like to review the [**Github project**](https://github.com/Cam/sass-library) or [**NPM package**](https://www.npmjs.com/package/sass-library).
 {% endhint %}
 
