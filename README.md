@@ -1,21 +1,25 @@
-# sass-library
+# Getting started
 
-Lean Sass toolkit
+## Getting Super Powers
 
-Import as needed into your Sass project.
+Becoming a super hero is a fairly straight forward process:
 
-## Components
+```
+$ give me super-powers
+```
 
-### Global tools
+{% hint style="info" %}
+ Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+{% endhint %}
 
-* Prefix
-* Visability - `visibility([hidden/visible], [position])`
-* Transitions
+Once you're strong enough, save the world:
 
-### Layout tools
+{% code title="hello.sh" %}
+```bash
+# Ain't no code for that yet, sorry
+echo 'You got to trust me on this, I saved the world'
+```
+{% endcode %}
 
-* Container
-* Breakpoint
-* Clearfix
 
-### Other tools
+
