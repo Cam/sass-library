@@ -1,6 +1,7 @@
 # Sass Library
 
-Lean Sass toolkit. Import as needed into your Sass project.
+Sass library is a toolkit of mixins and resources designed to make styling with SCSS as efficient by flexible as possible.
 
 * [https://github.com/Cam/sass-library](https://github.com/Cam/sass-library)
 * [https://www.npmjs.com/package/sass-library](https://www.npmjs.com/package/sass-library)
+
