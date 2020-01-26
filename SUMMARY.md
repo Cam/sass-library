@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Getting started](README.md)
+* [Sass Library](README.md)
+* [Getting started](getting-started.md)
 

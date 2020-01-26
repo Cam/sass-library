@@ -1,14 +1,9 @@
-# Getting started
+---
+description: Lean Sass toolkit. Import as needed into your Sass project.
+---
 
-## Add the library to your project
+# Sass Library
 
-Install using NPM
-
-```
-$ npm install sass-library
-```
-
-Install manually
-
-
+* [https://github.com/Cam/sass-library](https://github.com/Cam/sass-library)
+* [https://www.npmjs.com/package/sass-library](https://www.npmjs.com/package/sass-library)
 
