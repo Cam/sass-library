@@ -25,8 +25,8 @@ Manually download and add the modules you require to your project.
 @import '~sass-library/mixins/visibility.scss';
 ```
 
-### Other resources
+### Resources
 
-* [https://github.com/Cam/sass-library](https://github.com/Cam/sass-library)
-* [https://www.npmjs.com/package/sass-library](https://www.npmjs.com/package/sass-library)
-
+* [Github](https://github.com/Cam/sass-library)
+* [NPM](https://www.npmjs.com/package/sass-library)
+* [Documentation](https://cam1.gitbook.io/sass-library/)
