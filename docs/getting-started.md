@@ -2,7 +2,7 @@
 
 ### 1. Add the library to your project
 
-```css
+```bash
 $ npm install sass-library
 ```
 
