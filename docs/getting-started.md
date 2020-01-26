@@ -2,17 +2,11 @@
 
 ### 1. Add the library to your project
 
-{% tabs %}
-{% tab title="NPM" %}
-```text
+```css
 $ npm install sass-library
 ```
-{% endtab %}
 
-{% tab title="Manual" %}
-Manually download and add the modules you require to your project.
-{% endtab %}
-{% endtabs %}
+Alternatively include the files manually if you aren't using a package manager.
 
 ### 2. Import as needed into your Sass project
 
