@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/Cam/sass-library/issues"
   },
-  "homepage": "https://github.com/Cam/sass-library#readme"
+  "homepage": "https://github.com/Cam/sass-library#readme",
+  "dependencies": {}
 }

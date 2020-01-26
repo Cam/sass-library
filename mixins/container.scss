@@ -3,7 +3,7 @@
  *
  * Author: Cam Gould
  * Source: https://github.com/cam/sass-library
- * License: Copyright © 2018 Cam Gould. The MIT License (MIT)
+ * License: Copyright © 2020 Cam Gould. The MIT License (MIT)
  *
  * Dependencies: Globally applied border-box box-sizing
  *
@@ -15,7 +15,7 @@
  *   @import '~sass-library/mixins/container.scss';
  *
  *   .selector {
- *     @include container($grid-large);
+ *     @include container($grid-large, 4rem 2rem);
  *   }
  */
 

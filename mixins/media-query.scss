@@ -1,0 +1,52 @@
+/**
+ * Generates media queries
+ *
+ * Author: Cam Gould
+ * Source: https://github.com/cam/sass-library
+ * License: Copyright © 2020 Cam Gould. The MIT License (MIT)
+ *
+ * Arguments:
+ *   - $media: Optional {String}, Media type to target, defaults to `screen`
+ *   - $min: Optional {String}, Minimum media width to target, accepts various unit types
+ *   - $max: Optional {String}, Max media width to target, accepts various unit types
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/media-query.scss';
+ *
+ *   $medium-screens: (
+ *     media: screen,
+ *     min: 701px,
+ *     max: 900px
+ *   );
+ *
+ *   .selector {
+ *     @include media-query($medium-screens) {
+ *       color: red;
+ *     }
+ *   }
+ */
+
+@mixin media-query($map) {
+  $query: '';
+  $media: 'screen';
+
+  @if map-has-key($map, target) {
+    $media: map-get($map, target)
+  }
+
+  @if map-has-key($map, min) {
+    $query: append($query, 'and (min-width: #{map-get($map, min)})')
+  }
+
+  @if map-has-key($map, max) {
+    $query: append($query, 'and (max-width: #{map-get($map, max)})')
+  }
+
+  @if map-has-key($map, min) == false and map-has-key($map, max) == false {
+    $query: append($query, 'all')
+  }
+
+  @media #{$media} #{$query} {
+    @content;
+  }
+}

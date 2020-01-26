@@ -1,0 +1,105 @@
+// compileOnSave: true
+
+@import '../mixins/prefix.scss';
+@import '../mixins/visibility.scss';
+@import '../mixins/transitions.scss';
+@import '../mixins/container.scss';
+@import '../mixins/media-query.scss';
+@import '../mixins/transform.scss';
+
+// Variables
+
+$small-screens: (
+  max: 70em
+);
+
+$medium-screens: (
+  min: 70.1em,
+  max: 90em
+);
+
+$large-screens: (
+  min: 90.1em
+);
+
+// Layout
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body > div {
+  display: block;
+  min-height: 50px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+// Tests
+
+.prefix-test {
+  @include prefix(color, red, ms webkit moz);
+}
+
+.container-test .container {
+  @include container(700px, 20px);
+  background-color: #999;
+}
+
+.breakpoints-test {
+  span:nth-of-type(1) {
+    @include media-query($small-screens) {
+      display: none;
+    }
+  }
+
+  span:nth-of-type(2) {
+    @include media-query($medium-screens) {
+      display: none;
+    }
+  }
+
+  span:nth-of-type(3) {
+    @include media-query($large-screens) {
+      display: none;
+    }
+  }
+}
+
+.visibility-hidden-test:hover span {
+  @include visibility(hidden);
+}
+
+.visibility-visible-test {
+  > span {
+    @include visibility(hidden);
+  }
+
+  &:hover > span {
+    @include visibility(visible);
+  }
+}
+
+.transition-test > span {
+  color: green;
+  opacity: 1;
+  @include transition(color, opacity 1s ease-in);
+
+  &:hover {
+    color: blue;
+    opacity: 0.25;
+  }
+}
+
+.transform-test {
+  > span {
+    display: block;
+    @include transition(transform);
+  }
+
+  &:hover > span {
+    @include transform(rotateX(-180deg));
+  }
+}

@@ -5,8 +5,6 @@
  * Source: https://github.com/Shopify/starter-theme
  * License: Copyright © 2018 Shopify. The MIT License (MIT)
  *
- * Dependencies: ./functions/get-transition-properties.scss
- *
  * Arguments:
  *   - $transitions: {String} List of transition properties to set
  *
@@ -17,6 +15,36 @@
  *     @include transition(width, height 0.5s ease-in);
  *   }
  */
+
+@function get-transition-properties($transition) {
+ $property: all;
+ $duration: 0.35s;
+ $easing: cubic-bezier(0.44, 0.13, 0.48, 0.87);
+ $delay: null;
+
+ $defaultProperties: (
+   $property,
+   $duration,
+   $easing,
+   $delay
+ );
+
+ $properties: ();
+
+ @for $i from 1 through length($defaultProperties) {
+   $p: null;
+
+   @if $i <= length($transition) {
+     $p: nth($transition, $i);
+   } @else {
+     $p: nth($defaultProperties, $i);
+   }
+
+   $properties: append($properties, $p);
+ }
+
+ @return $properties;
+}
 
 @mixin transition($transitions...) {
   $output: ();

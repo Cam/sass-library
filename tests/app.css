@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/**
+ * Generates vendor prefixes for any CSS property
+ *
+ * Author: Hugo Giraudel
+ * Source: https://github.com/thoughtbot/bourbon
+ * License: Bourbon is copyright © 2011-2019 thoughtbot, inc.It is free
+ *          software, and may be redistributed under the terms specified in the
+ *          license.
+ *
+ * Arguments:
+ *   - $property {string} Property to prefix
+ *   - $value {string} Value to use
+ *   - $prefixes {list} Vendor prefixes to output (moz, webkit, o, ms, etc)
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/prefix.scss';
+ *
+ *   .element {
+ *      @include prefix(appearance, none, webkit moz));
+ *    }
+ */
+/**
+ * Hide or unhide an element but make it accessible to screen readers
+ *
+ * Arguments:
+ *   - $visibility: Required {String}, 'visible'/'hidden'
+ *   - $position: Optional {String}, 'absolute'/'relative'/...etc, defaults to 'static'
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/visibility.scss';
+ *
+ *   .selector {
+ *     @include visibility(hidden);
+ *   }
+ */
+/**
+ * Outputs list of transition properties
+ *
+ * Author: Thomas Kelly (Shopify)
+ * Source: https://github.com/Shopify/starter-theme
+ * License: Copyright © 2018 Shopify. The MIT License (MIT)
+ *
+ * Arguments:
+ *   - $transitions: {String} List of transition properties to set
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/transitions.scss';
+ *
+ *   .selector {
+ *     @include transition(width, height 0.5s ease-in);
+ *   }
+ */
+/**
+ * Layout container generator
+ *
+ * Author: Cam Gould
+ * Source: https://github.com/cam/sass-library
+ * License: Copyright © 2020 Cam Gould. The MIT License (MIT)
+ *
+ * Dependencies: Globally applied border-box box-sizing
+ *
+ * Arguments:
+ *   - $max-width: {String} Grid width variable (list found in variables.scss)
+ *   - $gutter: {String} rem, px, or other unit value/s
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/container.scss';
+ *
+ *   .selector {
+ *     @include container($grid-large, 4rem 2rem);
+ *   }
+ */
+/**
+ * Generates media queries
+ *
+ * Author: Cam Gould
+ * Source: https://github.com/cam/sass-library
+ * License: Copyright © 2020 Cam Gould. The MIT License (MIT)
+ *
+ * Arguments:
+ *   - $media: Optional {String}, Media type to target, defaults to `screen`
+ *   - $min: Optional {String}, Minimum media width to target, accepts various unit types
+ *   - $max: Optional {String}, Max media width to target, accepts various unit types
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/media-query.scss';
+ *
+ *   $medium-screens: (
+ *     media: screen,
+ *     min: 701px,
+ *     max: 900px
+ *   );
+ *
+ *   .selector {
+ *     @include media-query($medium-screens) {
+ *       color: red;
+ *     }
+ *   }
+ */
+/**
+ * Transforms an element
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/transform.scss';
+ *
+ *   .selector {
+ *     @include clearfix;
+ *   }
+ */
+/**
+ * Generates vendor prefixes for any CSS property
+ *
+ * Author: Hugo Giraudel
+ * Source: https://github.com/thoughtbot/bourbon
+ * License: Bourbon is copyright © 2011-2019 thoughtbot, inc.It is free
+ *          software, and may be redistributed under the terms specified in the
+ *          license.
+ *
+ * Arguments:
+ *   - $property {string} Property to prefix
+ *   - $value {string} Value to use
+ *   - $prefixes {list} Vendor prefixes to output (moz, webkit, o, ms, etc)
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/prefix.scss';
+ *
+ *   .element {
+ *      @include prefix(appearance, none, webkit moz));
+ *    }
+ */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body > div {
+  display: block;
+  min-height: 50px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.prefix-test {
+  -ms-color: red;
+  -webkit-color: red;
+  -moz-color: red;
+  color: red;
+}
+
+.container-test .container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  background-color: #999;
+}
+
+@media screen and (max-width: 70em) {
+  .breakpoints-test span:nth-of-type(1) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 70.1em) and (max-width: 90em) {
+  .breakpoints-test span:nth-of-type(2) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 90.1em) {
+  .breakpoints-test span:nth-of-type(3) {
+    display: none;
+  }
+}
+
+.visibility-hidden-test:hover span {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.visibility-visible-test > span {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.visibility-visible-test:hover > span {
+  position: static !important;
+  overflow: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: auto;
+}
+
+.transition-test > span {
+  color: green;
+  opacity: 1;
+  transition: color 0.35s cubic-bezier(0.44, 0.13, 0.48, 0.87), opacity 1s ease-in;
+}
+
+.transition-test > span:hover {
+  color: blue;
+  opacity: 0.25;
+}
+
+.transform-test > span {
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.44, 0.13, 0.48, 0.87);
+}
+
+.transform-test:hover > span {
+  -ms-transform: rotateX(-180deg);
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}

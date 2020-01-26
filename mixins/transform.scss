@@ -1,0 +1,16 @@
+/**
+ * Transforms an element
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/transform.scss';
+ *
+ *   .selector {
+ *     @include clearfix;
+ *   }
+ */
+
+@import 'prefix.scss';
+
+@mixin transform($transform) {
+  @include prefix(transform, $transform, ms webkit);
+}

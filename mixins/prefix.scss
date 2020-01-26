@@ -10,17 +10,17 @@
  * Arguments:
  *   - $property {string} Property to prefix
  *   - $value {string} Value to use
- *   - $prefixes {list} Vendor prefixes to output
+ *   - $prefixes {list} Vendor prefixes to output (moz, webkit, o, ms, etc)
  *
  * Usage:
- *   @import '~sass-library/mixins/prefixer.scss';
+ *   @import '~sass-library/mixins/prefix.scss';
  *
  *   .element {
- *      @include prefixer(appearance, none, ("webkit", "moz"));
+ *      @include prefix(appearance, none, webkit moz));
  *    }
  */
 
- @mixin prefixer(
+ @mixin prefix(
    $property,
    $value,
    $prefixes: ()

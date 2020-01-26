@@ -1,0 +1,41 @@
+/**
+ * Hide or unhide an element but make it accessible to screen readers
+ *
+ * Arguments:
+ *   - $visibility: Required {String}, 'visible'/'hidden'
+ *   - $position: Optional {String}, 'absolute'/'relative'/...etc, defaults to 'static'
+ *
+ * Usage:
+ *   @import '~sass-library/mixins/visibility.scss';
+ *
+ *   .selector {
+ *     @include visibility(hidden);
+ *   }
+ */
+
+@mixin visibility($visibility, $position: static) {
+  @if $visibility == hidden {
+    // stylelint-disable-next-line
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+
+  } @else if $visibility == visible {
+    // stylelint-disable-next-line
+    position: $position !important;
+    overflow: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    clip: auto;
+
+  } @else {
+    @error 'No value found for `#{$visibility}`. '
+         + 'Ensure either `hidden` or `visible is defined in your @import`';
+  }
+}

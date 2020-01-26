@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sass Library Tests</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <h2>Prefix</h2>
+
+    <div class="prefix-test">
+      <span>The text in this element has been modified using the prefix mixin.</span>
+    </div>
+
+    <h2>Container</h2>
+
+    <div class="container-test">
+      <div class="container">
+        This content is in a responsive element using the container mixin.
+      </div>
+    </div>
+
+    <h2>Breakpoints</h2>
+
+    <div class="breakpoints-test">
+      <span>This element is hidden on <b>small</b> screens using the media-query mixin.<br></span>
+
+      <span>This element is hidden on <b>medium</b> screens using the media-query mixin.<br></span>
+
+      <span>This element is hidden on <b>large</b> screens using the media-query mixin.<br></span>
+    </div>
+
+    <h2>Visibility</h2>
+
+    <div class="visibility-hidden-test">
+      <span>The text in this element has the visibility (hidden) mixin applied to the hover state.</span>
+    </div>
+
+    <div class="visibility-visible-test">
+      <span>The text in this element has had the visibility (hidden) mixin applied, then the visibility (visible) mixin applied to the hover state.</span>
+    </div>
+
+    <h2>Transitions</h2>
+
+    <div class="transition-test">
+      <span>This element has the transition mixin applied to the hover state.</span>
+    </div>
+
+    <h2>Transforms</h2>
+
+    <div class="transform-test">
+      <span>This element has the transform mixin applied to the hover state. The transition mixin has also been applied.</span>
+    </div>
+  </body>
+</html>
