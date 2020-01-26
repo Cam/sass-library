@@ -1,6 +1,8 @@
 # Sass Library
 
-Sass library is a toolkit of mixins and resources designed to make styling with SCSS as efficient by flexible as possible.
+Sass Library is a toolkit of mixins and resources designed to make styling with SCSS as efficient by flexible as possible.
+
+With Sass Library you can create rich responsive layouts without the need for heavy frameworks.
 
 {% page-ref page="getting-started.md" %}
 
