@@ -5,15 +5,15 @@
 ```markup
 <div class="container">
   <div class="column1">
-    This content is in a responsive element using the container mixin.
+    Grid-like element
   </div>
   
   <div class="column2">
-    This content is in a responsive element using the container mixin.
+    Grid-like element
   </div>
   
   <div class="column3">
-    This content is in a responsive element using the container mixin.
+    Grid-like element
   </div>
 </div>
 ```
