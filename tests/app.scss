@@ -44,7 +44,7 @@ body > div {
 }
 
 .container-test .container {
-  @include container(700px, 20px);
+  @include container(50em, 20px);
   background-color: #999;
 }
 
@@ -101,5 +101,17 @@ body > div {
 
   &:hover > span {
     @include transform(rotateX(-180deg));
+  }
+}
+
+.simple-layout-test .container {
+  @include container(50em, 20px 10px);
+  @include prefix(display, flex, webkit ms);
+  background-color: #444;
+
+  > div {
+    width: 100%;
+    margin: 0 10px;
+    background-color: #999;
   }
 }
