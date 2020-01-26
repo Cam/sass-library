@@ -2,6 +2,7 @@
 
 * [Sass Library](README.md)
 * [Getting started](getting-started.md)
+* [Examples](examples.md)
 
 ## Modules
 
