@@ -2,6 +2,9 @@
 
 ### Simple responsive layout
 
+Using a combination of mixins, we can create custom responsive layouts with ease.
+
+{% code title="index.html" %}
 ```markup
 <div class="container">
   <div class="column1">
@@ -17,7 +20,9 @@
   </div>
 </div>
 ```
+{% endcode %}
 
+{% code title="app.scss" %}
 ```css
 $small-screens: (
   max: 70em
@@ -55,4 +60,5 @@ $large-screens: (
   }
 }
 ```
+{% endcode %}
 
