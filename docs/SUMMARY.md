@@ -14,3 +14,8 @@
 * [Transitions](modules/transitions.md)
 * [Transform](modules/transform.md)
 
+## Links
+
+* [Github](https://github.com/Cam/sass-library/)
+* [NPM](https://www.npmjs.com/package/sass-library)
+
