@@ -1,3 +1,7 @@
+---
+description: 'https://sasslibrary.com'
+---
+
 # Sass Library
 
 ### Do more with less
