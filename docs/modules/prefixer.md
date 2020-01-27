@@ -8,7 +8,7 @@ Generates vendor prefixes for any CSS property
 
 `$value` {string} Value to use
 
-`$prefixes` {list} Vendor prefixes to output (moz, webkit, o, ms...)
+`$prefixes` {list} Vendor prefixes to output \(moz, webkit, o, ms...\)
 
 Usage:
 
@@ -20,10 +20,9 @@ Usage:
  }
 ```
 
------
+{% hint style="info" %}
+Author: Hugo Giraudel  
+Source: [https://github.com/thoughtbot/bourbon](https://github.com/thoughtbot/bourbon)  
+License: Bourbon is copyright © 2011-2019 thoughtbot, inc. It is free software, and may be redistributed under the terms specified in the license.
+{% endhint %}
 
-Author: Hugo Giraudel
-Source: https://github.com/thoughtbot/bourbon
-License: Bourbon is copyright © 2011-2019 thoughtbot, inc. It is free
-        software, and may be redistributed under the terms specified in the
-        license.
