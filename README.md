@@ -4,7 +4,11 @@ Sass library is a toolkit of mixins and resources designed to make styling with 
 
 📒 [Documentation](https://cam1.gitbook.io/sass-library/)
 
-## Quick start
+
+-----
+
+
+## Quick start guide
 
 ### 1. Add the library to your project
 
