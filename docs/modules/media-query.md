@@ -4,11 +4,11 @@ Generates media queries
 
 ## Arguments
 
-`$media` - Optional {string}, media type to target. Defaults to `screen`
+`$media` {string} Optional media type to target, defaults to `screen`
 
-`$min` - Optional {string}, minimum media width to target. Accepts various unit types (px, em, rem...)
+`$min` {string} Optional minimum media width to target, accepts various unit types (px, em, rem...)
 
-`$max` - Optional {string}, max media width to target. Accepts various unit types (px, em, rem...)
+`$max` {string} Optional max media width to target, accepts various unit types (px, em, rem...)
 
 ## Usage
 
@@ -27,3 +27,7 @@ $medium-screens: (
   }
 }
 ```
+
+-----
+
+Author: Cam Gould
