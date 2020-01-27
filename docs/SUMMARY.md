@@ -10,5 +10,7 @@
 * [Visibility](modules/visibility.md)
 * [Media Query](modules/media-query.md)
 * [Container](modules/container.md)
+* [Clearfix](modules/clearfix.md)
+* [Transitions](modules/transitions.md)
 * [Transform](modules/transform.md)
 

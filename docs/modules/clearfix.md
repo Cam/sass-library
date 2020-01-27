@@ -2,7 +2,7 @@
 
 Forces an element to self-clear its children
 
-## Usage
+### Usage
 
 ```css
 @import '~sass-library/mixins/clearfix.scss';
@@ -11,3 +11,4 @@ Forces an element to self-clear its children
   @include clearfix;
 }
 ```
+

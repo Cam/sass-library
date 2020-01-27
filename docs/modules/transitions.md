@@ -2,11 +2,11 @@
 
 Outputs list of transition properties
 
-## Arguments
+### Arguments
 
 `$transitions` {string} List of transition properties to set
 
-## Usage
+### Usage
 
 ```css
 @import '~sass-library/mixins/transitions.scss';
@@ -17,7 +17,8 @@ Outputs list of transition properties
 ```
 
 {% hint style="info" %}
-Author: Thomas Kelly (Shopify)
-Source: https://github.com/Shopify/starter-theme
-License: Copyright © 2018 Shopify. The MIT License (MIT)
+Author: Thomas Kelly \(Shopify\)  
+Source: [https://github.com/Shopify/starter-theme](https://github.com/Shopify/starter-theme)  
+License: Copyright © 2018 Shopify. The MIT License \(MIT\)
 {% endhint %}
+
