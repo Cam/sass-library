@@ -5,7 +5,9 @@ Generates vendor prefixes for any CSS property
 ## Arguments
 
 `$property` {string} Property to prefix
+
 `$value` {string} Value to use
+
 `$prefixes` {list} Vendor prefixes to output (moz, webkit, o, ms...)
 
 Usage:
