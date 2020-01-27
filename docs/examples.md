@@ -22,7 +22,7 @@ Using a combination of mixins, we can create custom responsive layouts with ease
 ```
 {% endcode %}
 
-{% code title="app.scss" %}
+{% code title="variables.scss" %}
 ```css
 $small-screens: (
   max: 70em
@@ -36,10 +36,20 @@ $medium-screens: (
 $large-screens: (
   min: 90.1em
 );
+```
+{% endcode %}
+
+{% code title="app.scss" %}
+```css
+@import 'variables.scss';
 
 .container {
-  @include container(50em, 20px);
+  @include container(70em, 20px);
   @include prefix(display, flex, webkit ms);
+  
+  > div {
+    @include prefix(flex, 1, webkit ms);
+  }
   
   .column-1 {
     @include media-query($small-screens) {
