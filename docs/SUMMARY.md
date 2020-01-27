@@ -9,4 +9,6 @@
 * [Prefixer](modules/prefixer.md)
 * [Media Query](modules/media-query.md)
 * [Visibility](modules/visibility.md)
+* [Transform](modules/transform.md)
+* [Container](modules/container.md)
 
