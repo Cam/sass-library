@@ -10,11 +10,11 @@
 // Variables
 
 $small-screens: (
-  max: 70em
+  max: 40em
 );
 
 $medium-screens: (
-  min: 70.1em,
+  min: 40.1em,
   max: 90em
 );
 
@@ -105,13 +105,18 @@ body > div {
 }
 
 .simple-layout-test .container {
-  @include container(50em, 20px 10px);
+  @include container(70em, 10px);
   @include prefix(display, flex, webkit ms);
   background-color: #444;
 
+  @include media-query($small-screens) {
+    @include prefix(flex-direction, column, webkit ms);
+  }
+
   > div {
-    width: 100%;
-    margin: 0 10px;
+    @include prefix(flex, 1, webkit ms);
+    margin: 10px;
+    padding: 10px;
     background-color: #999;
   }
 }
