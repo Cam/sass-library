@@ -8,7 +8,9 @@ Globally applied `border-box: box-sizing;`
 
 ### Arguments
 
-`$max-width` {string} Grid width variable, accepts various unit types \(px, em, rem...\) `$gutter` {string} The margins around your element, accepts various unit types \(px, em, rem...\)
+`$max-width` {string} Grid width variable, accepts various unit types \(px, em, rem...\)
+
+`$gutter` {string} The margins around your element, accepts various unit types \(px, em, rem...\)
 
 ### Usage
 
