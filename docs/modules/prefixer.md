@@ -10,7 +10,7 @@ Generates vendor prefixes for any CSS property
 
 `$prefixes` {list} Vendor prefixes to output \(moz, webkit, o, ms...\)
 
-Usage:
+## Usage
 
 ```css
 @import '~sass-library/mixins/prefix.scss';
@@ -21,8 +21,7 @@ Usage:
 ```
 
 {% hint style="info" %}
-Author: Hugo Giraudel  
-Source: [https://github.com/thoughtbot/bourbon](https://github.com/thoughtbot/bourbon)  
+Author: Hugo Giraudel
+Source: [https://github.com/thoughtbot/bourbon](https://github.com/thoughtbot/bourbon)
 License: Bourbon is copyright © 2011-2019 thoughtbot, inc. It is free software, and may be redistributed under the terms specified in the license.
 {% endhint %}
-

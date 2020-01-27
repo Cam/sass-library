@@ -5,7 +5,7 @@
  *   @import '~sass-library/mixins/transform.scss';
  *
  *   .selector {
- *     @include clearfix;
+ *     @include transform(rotateX(-180deg));
  *   }
  */
 
