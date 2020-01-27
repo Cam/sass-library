@@ -7,8 +7,8 @@
 ## Modules
 
 * [Prefixer](modules/prefixer.md)
-* [Media Query](modules/media-query.md)
 * [Visibility](modules/visibility.md)
-* [Transform](modules/transform.md)
+* [Media Query](modules/media-query.md)
 * [Container](modules/container.md)
+* [Transform](modules/transform.md)
 
