@@ -1,8 +1,6 @@
----
-description: 'https://sasslibrary.com'
----
-
 # Sass Library
+
+[https://sasslibrary.com](https://sasslibrary.com)
 
 ### Do more with less
 
