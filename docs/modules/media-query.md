@@ -30,4 +30,6 @@ $medium-screens: (
 
 -----
 
-Author: Cam Gould
+{% hint style="info" %}
+  Author: Cam Gould
+{% endhint %}
