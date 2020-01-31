@@ -7,15 +7,15 @@ Using a combination of mixins, we can create custom responsive layouts with ease
 {% code title="index.html" %}
 ```markup
 <div class="container">
-  <div class="column1">
+  <div class="show-medium-up">
     Grid-like element
   </div>
   
-  <div class="column2">
+  <div class="hide-medium">
     Grid-like element
   </div>
   
-  <div class="column3">
+  <div class="show-medium-down">
     Grid-like element
   </div>
 </div>
@@ -51,19 +51,19 @@ $large-screens: (
     @include prefix(flex, 1, webkit ms);
   }
   
-  .column-1 {
+  .show-medium-up {
     @include media-query($small-screens) {
       display: none;
     }
   }
 
-  .column-2 {
+  .hide-medium {
     @include media-query($medium-screens) {
       display: none;
     }
   }
 
-  .column-3 {
+  .show-medium-down {
     @include media-query($large-screens) {
       display: none;
     }
