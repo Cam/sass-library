@@ -30,8 +30,8 @@
   $query: '';
   $media: 'screen';
 
-  @if map-has-key($map, target) {
-    $media: map-get($map, target)
+  @if map-has-key($map, media) {
+      $media: map-get($map, media)
   }
 
   @if map-has-key($map, min) {
