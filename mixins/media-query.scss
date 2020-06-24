@@ -31,7 +31,7 @@
   $media: 'screen';
 
   @if map-has-key($map, media) {
-      $media: map-get($map, media)
+    $media: map-get($map, media)
   }
 
   @if map-has-key($map, min) {
